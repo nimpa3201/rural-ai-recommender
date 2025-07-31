@@ -18,9 +18,14 @@ dependencies {
 
     // ✅ JSON 직렬화
     implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'org.projectlombok:lombok:1.18.28'
 
     // ✅ 테스트
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
 
 test {
