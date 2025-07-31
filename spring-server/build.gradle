@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.5'    // 최신 안정 버전
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.ruralai'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '21'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // ✅ Spring WebFlux (WebClient 포함)
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    // ✅ JSON 직렬화
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+
+    // ✅ 테스트
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}

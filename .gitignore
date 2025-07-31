@@ -1,5 +1,56 @@
+# -------------------------------
+# OS & Editor
+# -------------------------------
+.DS_Store
+.vscode/
+.idea/
+*.iml
+
+# -------------------------------
+# Java / Gradle
+# -------------------------------
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Ignore Gradle logs
+*.log
+
+# -------------------------------
+# Spring Boot
+# -------------------------------
+logs/
+*.env
+.env
+
+# -------------------------------
+# Test artifacts
+# -------------------------------
+test-output/
+test-results/
+out/
+
+# -------------------------------
+# Python / FastAPI
+# -------------------------------
 venv/
 __pycache__/
-*.pyc
-.env
-.DS_Store
+*.py[cod]
+*.pyo
+
+# -------------------------------
+# Eclipse
+# -------------------------------
+.classpath
+.project
+.settings/
+bin/
+
+# -------------------------------
+# NetBeans
+# -------------------------------
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
